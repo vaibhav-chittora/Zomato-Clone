@@ -1,0 +1,267 @@
+/* CSS Reset  */
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+/* CSS Variables */
+:root {
+    --navbar-height: 50px;
+}
+
+/* Navigation Bar  */
+#navbar {
+    display: flex;
+    align-items: center;
+    position: relative;
+    top: 0%;
+    left: 0%;
+}
+
+#navbar::before {
+    content: '';
+    background-color: black;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+/* Navigation Bar Logo and image  */
+#logo {
+    margin: -5px 25px
+}
+
+
+#logo img {
+    border-radius: 50px;
+    height: 75px;
+    margin: 13px 23px;
+}
+
+/* Navigation Bar List styling*/
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.25rem;
+}
+
+#navbar ul li a {
+    display: block;
+    background-color: #87787840;
+    color: black;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 8px 15px;
+    margin: 0px 15px;
+}
+
+#navbar ul li a:hover {
+    background-color: white;
+color: black;
+    border: 1px solid black;
+}
+
+/* #navbar div[input]{
+    flex-direction: row-reverse;
+} */
+
+
+
+
+/* Home Section  */
+
+#home {
+    display: flex;
+    flex-direction: column;
+    height: 221px;
+    justify-content: center;
+    align-items: center;
+    /* margin: 20px;
+    margin-bottom: 65px; */
+    margin: 13px 42px 30px;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    background: url('../Img/bg4.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 48%;
+    top: 0%;
+    left: 0%;
+    z-index: -1;
+    opacity: 0.8;
+}
+
+#home h1 {
+    color: black;
+}
+
+#home p {
+    font-size: 1.2rem;
+}
+
+/* Services Section  */
+#services-container{
+    margin-bottom: 60px;
+}
+
+#services {
+    margin: 20px;
+    display: flex;
+
+}
+
+#services .box {
+    border: 3px solid purple;
+    margin: 10px 20px;
+    padding: 25px;
+    border-radius: 20px;
+    background-color: #e4e0e0d6;
+    
+}
+
+#services .box img {
+    display: block;
+    margin: auto;
+    height: 250px;
+}
+
+#services .box p {
+    font-family: cursive;
+}
+
+/* clients Section  */
+#client-section {
+    height: 300px;
+    position: relative;
+}
+
+#client-section::before {
+    content: '';
+    position: absolute;
+    background: url('../Img/bg5.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 100%;
+    /* top: 0%; */
+    left: 0%;
+    z-index: -1;
+    opacity: 0.2;
+}
+
+
+
+#client {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .client-item{
+   
+} */
+#client img {
+    height: 150px;
+    padding: 25px;
+    margin: 20px
+}
+
+/* Contact Section  */
+
+#contact-section {
+    position: relative;
+    margin-top: 80px;
+    margin-bottom: 0px;
+}
+
+#contact-section::before {
+    content: ' ';
+    background: url('../Img/bg6.jpg') no-repeat center center/cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+#contact-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+#contact-box input,
+textarea {
+    width: 100%;
+    padding: 5px;
+    margin: 2px;
+    border: 2px solid grey;
+    border-radius: 10px;
+
+}
+
+#contact-box label {
+    font-size: 1.3rem;
+    font-family: cursive;
+
+}
+
+.form-group button {
+    color: white;
+    background-color: black;
+    display: block;
+    margin: 10px auto;
+}
+
+/* footer section  */
+
+footer {
+
+    color: white;
+    background-color: black;
+    font-size: 20px;
+    padding: 13px;
+
+
+}
+
+footer a {
+    color: yellow;
+    text-decoration: none;
+}
+
+/* utility classes */
+
+.h-primary {
+    font-size: 3rem;
+    padding: 10px;
+}
+
+.h-secondary {
+    font-size: 2rem;
+    padding: 10px;
+}
+
+.btn {
+    padding: 8px 15px;
+    margin: 10px;
+    background-color: red;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 1.1rem;
+
+}
+
+.center {
+    text-align: center;
+}
+
